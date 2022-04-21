@@ -27,3 +27,23 @@
 // //   digitalClock(87000) âžž "00:10:00"
 // //   // It's 00:10 next day.
 // console.log(format(87000));
+
+function seconds2HMS(value) {
+  // value = 5025;
+  const sec = parseInt(value);
+  let days = Math.floor(sec / 86400); //0.058 ~ 0
+  let hours = Math.floor((sec - days * 86400) / 3600); //1.39 ~ 1
+  // console.log(hours);
+  let minutes = Math.floor((sec - days * 86400 - hours * 3600) / 60); // 23.75 ~ 23
+  let seconds = sec - days * 86400 - hours * 3600 - minutes * 60; // 45
+
+  if (hours < 10) hours = "0" + hours;
+  if (minutes < 10) minutes = "0" + minutes;
+  if (seconds < 10) seconds = "0" + seconds;
+
+  return days + "day(s)" + " " + " " + hours + ":" + minutes + ":" + seconds;
+}
+console.log(seconds2HMS(5025));
+console.log(seconds2HMS(98000));
+console.log(seconds2HMS(61201));
+console.log(seconds2HMS(864000));
