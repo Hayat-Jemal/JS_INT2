@@ -47,3 +47,22 @@ console.log(seconds2HMS(5025));
 console.log(seconds2HMS(98000));
 console.log(seconds2HMS(61201));
 console.log(seconds2HMS(864000));
+
+function SplitTime(numberOfHours) {
+  var Days = Math.floor(numberOfHours / 24);
+  var Remainder = numberOfHours % 24;
+  var Hours = Math.floor(Remainder);
+  var Minutes = Math.floor(60 * (Remainder - Hours));
+  return { Days: Days, Hours: Hours, Minutes: Minutes };
+}
+var hours = 27.3;
+var timeResult = SplitTime(hours);
+console.log(
+  "27.3 hours translate to  " +
+    timeResult.Days +
+    "Days " +
+    timeResult.Hours +
+    "Hours and " +
+    timeResult.Minutes +
+    "Minutes."
+);
