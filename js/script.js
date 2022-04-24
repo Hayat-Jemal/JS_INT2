@@ -95,3 +95,22 @@ console.log(
 // //   digitalClock(87000) âžž "00:10:00"
 // //   // It's 00:10 next day.
 // console.log(format(87000));
+
+function SplitTime(numberOfHours) {
+  var Days = Math.floor(numberOfHours / 24);
+  var Remainder = numberOfHours % 24;
+  var Hours = Math.floor(Remainder);
+  var Minutes = Math.floor(60 * (Remainder - Hours));
+  return { Days: Days, Hours: Hours, Minutes: Minutes };
+}
+var hours = 27.3;
+var timeResult = SplitTime(hours);
+console.log(
+  "27.3 hours translate to  " +
+    timeResult.Days +
+    "Days " +
+    timeResult.Hours +
+    "Hours and " +
+    timeResult.Minutes +
+    "Minutes."
+);
