@@ -139,3 +139,10 @@ console.log(even([1, 3, 2, 6, 4, 8])); // 2,4
 console.log(even([0, 1, 2, 3, 4]));
 //   getOnlyEvens([1, 2, 3, 4, 5]) âžž []
 console.log(even([1, 2, 3, 4, 5]));
+// Question 4 to 7 are Entry exam questions for a masters program at MUM
+
+// Question 4: 
+//   Write a function that takes an array of integers as an argument and returns a value based on the sums of the even and odd numbers in the array. Let X = the sum of the odd numbers in the array and let Y = the sum of the even numbers. The function should return X - Y
+
+  // The signature of the function is:
+  // function f(a)
