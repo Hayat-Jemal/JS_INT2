@@ -114,3 +114,13 @@ console.log(
     timeResult.Minutes +
     "Minutes."
 );
+//   Question 3: 
+//   Given an array of numbers, return an array which contains all the even numbers in the original array, which also have even indices.
+// var arr = [4, 5, 7, 8, 14, 45, 76];
+
+// let array = [1,3,2,6,4,8];
+// for (let i = 0; i < array.length; i++) {
+//   if (i % 2 == 0 && array[i] % 2 == 0) {
+//     console.log(array[i]);
+//   }
+// }
