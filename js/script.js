@@ -146,3 +146,27 @@ console.log(even([1, 2, 3, 4, 5]));
 
   // The signature of the function is:
   // function f(a)
+function f(a) {
+  let r = 0;
+  for (i = 0; i < a.length; i++) {
+    if (a[i] % 2 === 1) {
+      r = r + a[i];
+    }
+  }
+  let re = 0;
+  for (i = 0; i < a.length; i++) {
+    if (a[i] % 2 === 0) {
+      re = re + a[i];
+    }
+  }
+  return r - re;
+}
+console.log(f([1]));
+console.log(f([1, 2]));
+console.log(f([1, 2, 3]));
+console.log(f([1, 2, 3, 4]));
+console.log(f([3, 3, 4, 4]));
+console.log(f([3, 2, 3, 4]));
+console.log(f([4, 1, 2, 3]));
+console.log(f([1, 1]));
+console.log(f([]));
