@@ -181,3 +181,16 @@ console.log(f([]));
 // //   if input array is {4, 1, 2, 3} return	-2
 // //   if input array is {1, 1} return	2
 // //   if input array is {} return	0
+// Question 5:
+//   Write a function that takes a positive integer and returns the factorial of the number
+//   Notes
+//   The factorial of 0 is 1.
+//   The factorial of any positive integer x is x * (x - 1) * (x - 2) * . . . . . . * 1 (e.g. factorial of 4 is 4 * 3 * 2 * 1 = 24)  
+function factoralize(p) {
+  for (i = p - 1; i >= 1; i--) {
+    p = p * i;
+  }
+  return p;
+}
+console.log(factoralize(4));
+console.log(factoralize(10));
