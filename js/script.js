@@ -170,3 +170,14 @@ console.log(f([3, 2, 3, 4]));
 console.log(f([4, 1, 2, 3]));
 console.log(f([1, 1]));
 console.log(f([]));
+
+// //   Examples
+// //   if input array is {1}	return 1
+// //   if input array is {1, 2}	return -1
+// //   if input array is {1, 2, 3} return	2
+// //   if input array is {1, 2, 3, 4} return	-2
+// //   if input array is {3, 3, 4, 4} return	-2
+// //   if input array is {3, 2, 3, 4} return	0
+// //   if input array is {4, 1, 2, 3} return	-2
+// //   if input array is {1, 1} return	2
+// //   if input array is {} return	0
