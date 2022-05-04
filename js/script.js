@@ -194,7 +194,8 @@ function factoralize(p) {
 }
 console.log(factoralize(4));
 console.log(factoralize(10));
- // 2nd method
+
+// 2nd method
 // function factoralize(p) {
 //   let f = p
 //   if (p === 0 && p === 1) {
@@ -209,3 +210,22 @@ console.log(factoralize(10));
 // console.log(factoralize(4))
 // // Question 6: 
 // //   Consider an array A with n of positive integers. An integer idx is called a POE (point of equilibrium) of A, if A[0] + A[1] + â€¦ + A[idx â€“ 1] is equal to A[idx + 1] + A[idx + 2] + â€¦ + A[n â€“ 1]. Write a function to return POE of an array, if it exists and -1 otherwise.
+// function equiTaster(a) {
+//   for (e = 1; e < a.length - 1; e++) {
+//     var left = 0;
+//     for (i = 0; i < e; i++) {
+//       left = left + a[i];
+//     }
+//     var right = 0;
+//     for (i = e + 1; i < a.length; i++) {
+//       right = right + a[i];
+//     }
+//     if (left == right) {
+//       return e;
+//     }
+//     if (e == a.length - 2) {
+//       return -1;
+//     }
+    
+//   }
+// }
