@@ -263,7 +263,52 @@ console.log(factoralize(10));
 // //   return -1
 // //   Reason: No POE
 
+// // Question 7:
+// //   Write a function that takes an array of numbers, sorts the elements in ascending order and returns the sorted array?
 
+// //     Note: Don't use the sort() method. 
+
+// //   Example: 
+// //   if input array = [12, 10, 15, 11, 14, 13, 16]
+// //   returns [10, 11, 12, 13, 14, 15, 16]
+
+// // var arr = [12, 10, 15, 11, 14, 13, 16],
+// //   copy = arr.slice(0, 1),
+// //   i,
+// //   j;
+
+// // outer: for (i = 1; i < arr.length; i++) {
+// //   for (j = 0; j < copy.length; j++) {
+// //     if (arr[i] < copy[j]) {
+// //       copy.splice(j, 0, arr[i]);
+// //       continue outer;
+// //     }
+// //   }
+// //   copy.push(arr[i]);
+// // }
+// // console.log(copy);
+
+
+// function bubbleSort(array) {
+//   var done = false;
+//   while (!done) {
+//     done = true;
+//     for (var i = 1; i < array.length; i += 1) {
+
+//       if (array[i - 1] > array[i]) {
+//         done = false;
+//         var tmp = array[i - 1];
+//         array[i - 1] = array[i];
+//         array[i] = tmp;
+//       }
+//     }
+//   }
+//   return array;
+// }
+
+// var numbers = [12, 10, 15, 11, 14, 13, 16]; // [10,12,11,14,13,15,16] //[10,11,12,13,14,15,16]
+// bubbleSort(numbers);
+// console.log(numbers);
 
 
 
