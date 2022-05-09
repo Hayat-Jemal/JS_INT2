@@ -205,10 +205,10 @@ console.log(factoralize(10));
 //     p--;
 //     f = f * p;
 //   }
-//   return f 
+//   return f
 // }
 // console.log(factoralize(4))
-// // Question 6: 
+// // Question 6:
 // //   Consider an array A with n of positive integers. An integer idx is called a POE (point of equilibrium) of A, if A[0] + A[1] + â€¦ + A[idx â€“ 1] is equal to A[idx + 1] + A[idx + 2] + â€¦ + A[n â€“ 1]. Write a function to return POE of an array, if it exists and -1 otherwise.
 // function equiTaster(a) {
 //   for (e = 1; e < a.length - 1; e++) {
@@ -229,3 +229,49 @@ console.log(factoralize(10));
     
 //   }
 // }
+
+// // let equi = equiTaster([1, 8, 3, 7, 10, 2]);
+// console.log(equiTaster([1, 8, 3, 7, 10, 2]));
+// console.log(equiTaster([1, 2,3]));
+// // left  9 + 3           i 0 1 2 3 4 5
+// // left 12 +7=19+10=29+2=31
+
+// //   The signature of the function is:
+// //   function(a)
+// //   Examples
+// //   if input array is {1, 8, 3, 7, 10, 2}
+// //   return 3
+// //   Reason: a[0] + a[1] + a[2] is equal to a[4] + a[5]
+
+// //   if input array is {1, 5, 3, 1, 1, 1, 1, 1, 1}
+// //   return 2
+// //   Reason: a[0] + a[1] is equal to a[3] + a[4] + a[5] + a[6] + a[7] + a[8]
+
+// //   if input array is {2, 1, 1, 1, 2, 1, 7}
+// //   return 5
+// //   Reason: a[0] + a[1] + a[2] + a[3] + a[4] is equal to a[6]
+
+// //   if input array is {1, 2, 3}
+// //   return -1
+// //   Reason: No POE
+
+// //   if input array is {3, 4, 5, 10}
+// //   return -1
+// //   Reason: No POE
+
+// //   if input array is {1, 2, 10, 3, 4}
+// //   return -1
+// //   Reason: No POE
+
+
+
+
+
+
+
+
+
+
+
+
+
