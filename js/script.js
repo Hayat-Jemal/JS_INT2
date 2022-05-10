@@ -309,7 +309,44 @@ console.log(factoralize(10));
 // var numbers = [12, 10, 15, 11, 14, 13, 16]; // [10,12,11,14,13,15,16] //[10,11,12,13,14,15,16]
 // bubbleSort(numbers);
 // console.log(numbers);
+// function Sort(array) {
+//   var done = false;
+//   while (!done) {
+//     done = true;
+//     console.log("while loop")
+//     for (var i = 0; i < array.length; i += 1) {
+//       if (array[i] > array[i+1]) {
+//         done = false;
+//         var tmp = array[i];
+//         array[i] = array[i + 1];
+//         array[i + 1] = tmp;
+//       }
+//     }
+//   }
+//   return array;
+// }
 
+// var numbers = [12, 10, 15, 11, 14, 13, 16];
+// Sort(numbers);
+// console.log(numbers);
+// // step 4 pseudo code
+// // -define afunction that takes an argument
+// // -check if arra is a number if not return error Message
+// // -define for loop
+// //      -initial 1       -limit arra.length    -update +1
+
+
+// const original = [28, 100, 15, 11, 14, 13, 16];
+// const sorted = original.slice().sort((a, b) => a - b);
+
+// console.log(sorted);
+
+// //   if input array = [1]
+// //   returns [1]
+
+
+// //   if input array = [12, 10, 10]
+// //   returns [10, 10, 12]
 
 
 
