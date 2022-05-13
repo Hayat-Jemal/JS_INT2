@@ -266,9 +266,9 @@ console.log(factoralize(10));
 // // Question 7:
 // //   Write a function that takes an array of numbers, sorts the elements in ascending order and returns the sorted array?
 
-// //     Note: Don't use the sort() method. 
+// //     Note: Don't use the sort() method.
 
-// //   Example: 
+// //   Example:
 // //   if input array = [12, 10, 15, 11, 14, 13, 16]
 // //   returns [10, 11, 12, 13, 14, 15, 16]
 
@@ -347,6 +347,26 @@ console.log(factoralize(10));
 
 // //   if input array = [12, 10, 10]
 // //   returns [10, 10, 12]
+
+// // -Return Something to Me
+// // -Write a function that returns the string "something" joined with a space " " and the given argument a.
+// // / Examples
+// // // giveMeSomething("is better than nothing") ➞ "something is better than nothing"
+// // function giveMeSomething(a) {
+// //   console.log(a+" is better than nothing")
+// // }
+// // giveMeSomething("something");
+
+// function giveMeSomething(a) {
+//   let b = "something" + a;
+//   return b
+// }
+
+// console.log(giveMeSomething(" is better than nothing"));
+// // // giveMeSomething("Bob Jane") ➞ "something Bob Jane"
+// console.log(giveMeSomething(" Bob Jane"));
+ // // giveMeSomething("something") ➞ "something something"
+// console.log(giveMeSomething(" something"));
 
 
 
