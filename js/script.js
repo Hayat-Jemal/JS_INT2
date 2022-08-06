@@ -371,25 +371,7 @@ console.log(factoralize(10));
 // -Buggy Code (Part 1)
 // // Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
 // // Examples
-// function cubes(a) {
-// 	return a ** 3
-// }
-// console.log(cubes(3));
-// // cubes(3) ➞ 27 that means 3*3*3
-// console.log(cubes(5));
-// // cubes(5) ➞ 125
-// // Power Calculator
-// // Create a function that takes voltage and current and returns the calculated power.
-// // Examples
-// function circuitPower(voltage, current) {
-//   power = voltage * current;
-//   return power
-// }
-// console.log(circuitPower(230, 10));
-// // circuitPower(230, 10) ➞ 2300
-// console.log(circuitPower(480, 20));
-// // circuitPower(480, 20) ➞ 9600
-// function lessThan100(a, b) {
+// function cubes(a) { 
 //   if (a + b < 100) {
 //     return true
 //   }
